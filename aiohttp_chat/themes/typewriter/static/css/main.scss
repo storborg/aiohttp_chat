@@ -1,0 +1,29 @@
+@import 'vendor/bootstrap4/bootstrap';
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: monospace;
+}
+
+.message {
+    .author {
+        font-weight: bold;
+        display: inline-block;
+        &:after {
+            margin-left: 10px;
+            content: "/";
+            color: #ccc;
+        }
+    }
+
+    &.message-system {
+        .author {
+            color: #bd0000;
+        }
+    }
+
+    &.message-me {
+        .author {
+            color: #00bd00;
+        }
+    }
+}

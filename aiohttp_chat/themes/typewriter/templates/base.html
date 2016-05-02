@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>${self.title()}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  ${theme.asset_tag('main.css')}
+  ${self.additional_head()}
+</head>
+<body>
+  ${next.body()}
+  ${theme.asset_tag('main.js')}
+  ${self.additional_footer()}
+</body>
+</html>
+
+
+
+<%def name="title()">Chat</%def>
+
+
+<%def name="additional_head()"></%def>
+
+
+<%def name="additional_footer()"></%def>

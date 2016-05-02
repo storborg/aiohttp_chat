@@ -1,0 +1,24 @@
+<%inherit file="base.html"/>
+
+
+<%def name="title()">Chat</%def>
+
+
+<section class="section-index">
+  <div class="container-fluid">
+    <p class="lead">Welcome to <strong>aiohttp_chat</strong>.</p>
+    <div class="messages">
+      <p class="message message-other"><span class="author">scott</span> this is a chat server.</p>
+      <p class="message message-other"><span class="author">scott</span> yeah.</p>
+      <p class="message message-other"><span class="author">alice</span> the quick brown fox jumped over the lazy dog.</p>
+    </div>
+  </div>
+</section>
+
+
+<nav class="navbar navbar-fixed-bottom navbar-light bg-faded">
+  <form class="form-inline form-message">
+    <input class="form-control" type="text" placeholder="Type messages here...">
+    <button class="btn btn-default-outline" type="submit">Submit</button>
+  </form>
+</nav>
